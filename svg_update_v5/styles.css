@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #111;
+  background: #edeff0;
+  background-image: url('svgs/background.svg');
+}
+
+#container {
+  max-width: 960px;
+  background: #fff;
+  margin: 0 auto;
+  height: 100%; /* new line */
+}
+
+p {
+  max-width: 350px;
+  margin: 35px auto 0;
+  line-height: 2em;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: #39add1;
+  font-weight: 700;
+}
+
+a:hover {
+  color: #111;
+}
+
+header {
+  padding-top: 10px;
+}
+
+header nav {
+  padding-bottom: 50px;
+  text-align: left;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+main {
+  padding-top: 50px;
+}
+
+main h2 {
+  font-size: 28px;
+}
+
+footer {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  color: #ba8058;
+}
+
+/* Keyframes */
+
+@keyframes grow{
+		0%{
+			transform: scale(1);
+		}
+		30%{
+			transform: scale(1.2);
+		}
+		60%{
+			transform: scale(0.9);
+		}
+	}
+
+/* Navigation Menu */
+
+.nav-item {
+	font-size: 1em;
+	font-weight: bold;
+	color: #39ADD1;
+	list-style: none;
+	display: inline;
+	margin: 5px;
+	vertical-align: middle;
+	transition: 0.5s;
+}
+
+.nav-item path {
+	fill:#39ADD1;
+	transition:0.5s;
+}
+
+.nav-item:hover {
+	color:tomato;
+}
+
+.nav-item:hover path {
+	fill:tomato;
+}
+
+.nav-bar {
+	text-align: left;
+	margin:0;
+	padding:20px 50px;
+}
+
+.nav-icon {
+	height:0.8em;
+	margin-right: 5px;
+}
+
+/* Logos */
+
+.logo svg {
+	width:140px;
+	height:120px;
+	margin:0 auto;
+}
+
+.logo .st1 {
+	display:none; /*Hides the logo text in small browsers*/
+}
+
+.logo svg:hover .st2 {
+		display: inline;
+		animation: grow 1s ease-out backwards; /*Transition for the logo*/
+}
+
+.corgi-img .body {
+	fill:currentColor;
+}
+
+.corgi1 {
+  transition: transform .6s ease-in-out;
+  transform-origin: 50% 50%;
+	color:#B97F5B;
+}
+
+.corgi1:hover {
+	transform: rotate(-8deg) translateY(-5px);
+}
+
+
+.corgi2 {
+  transition: transform .6s ease-in-out;
+  transform-origin: 50% 50%;
+	color:#E9AA82
+}
+
+.corgi2:hover {
+  transform: rotate(-8deg) translateY(-5px);
+}
+
+
+
+.corgi3 {
+  transition: transform .6s ease-in-out;
+  transform-origin: 50% 50%;
+	color:#834B29
+}
+
+.corgi3:hover {
+  transform: rotate(-8deg) translateY(-5px);
+}
+
+.corgi4 {
+  transition: transform .6s ease-in-out;
+  transform-origin: 50% 50%;
+	color:#52595E;
+}
+.corgi4:hover {
+  transform: rotate(-8deg) translateY(-5px);
+}
+
+.logo .st2 {
+	transform-origin: 50% 50%;
+}
+
+/* Breakpoint */
+
+@media(min-width:425px) {
+
+	.logo h1 {
+		display:none;
+	}
+
+	.logo .st1 {
+		display:inline;
+	}
+}
